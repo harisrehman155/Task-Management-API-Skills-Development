@@ -5,4 +5,12 @@ description = "Minimal FastAPI Hello World application"
 requires-python = ">=3.8"
 dependencies = [
     "fastapi[standard]>=0.115.0",
+    "psycopg2-binary>=2.9.10",
+    "pydantic-settings>=2.8.1",
+    "sqlmodel>=0.0.29",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
 ]
